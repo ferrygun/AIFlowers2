@@ -1,0 +1,9 @@
+.center-container {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+ 
+.active {
+  border: 5px solid red;
+}

@@ -1,0 +1,33 @@
+<html>
+<title>Flowers AI</title>
+<!-- stylesheets -->
+<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/yeti/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+<div class="row">
+ 
+  <div class="col-md-7">
+    <h1>Flowers AI - Daisy, Rose or Sunflowers ?</h1>
+	<h2>Upload a flower image</h2>
+    <br>
+    <form action="" method=post enctype=multipart/form-data>
+      <input type=file name=file>
+      <input type=submit value=Upload>
+    </form>
+
+    <h2>Results</h2>
+    <br>
+    <table class="table" id="results-table">
+        <tr>
+          <th>Image</th>
+          <th>Prediction</th>
+        </tr>
+		<tr>
+          {% block content %}{% endblock %}
+        </tr>
+    </table>
+  </div>
+ 
+</div>
+
+</html>
+ 
